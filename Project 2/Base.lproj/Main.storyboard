@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9527.1" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9525.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Project_2" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bqf-fr-8K6">
+                                <rect key="frame" x="200" y="226" width="200" height="100"/>
+                                <state key="normal" image="estonia"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="05A-Mb-yRy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IRF-ia-Fp1">
+                                <rect key="frame" x="200" y="353" width="200" height="100"/>
+                                <state key="normal" image="estonia"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Svx-Wm-LYW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NZw-U3-5jz">
+                                <rect key="frame" x="200" y="106" width="200" height="100"/>
+                                <state key="normal" image="estonia"/>
+                                <connections>
+                                    <action selector="buttonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="d7b-y1-amz"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="IRF-ia-Fp1" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="7pj-Ky-jwA"/>
+                            <constraint firstItem="IRF-ia-Fp1" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="333" id="eap-xQ-hFQ"/>
+                            <constraint firstItem="bqf-fr-8K6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fRE-wM-1Jp"/>
+                            <constraint firstItem="NZw-U3-5jz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="86" id="pq8-cc-Jk3"/>
+                            <constraint firstItem="bqf-fr-8K6" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="206" id="sWA-6G-Gss"/>
+                            <constraint firstItem="NZw-U3-5jz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="uy7-kh-UXB"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button1" destination="NZw-U3-5jz" id="YFn-qv-Spf"/>
+                        <outlet property="button2" destination="bqf-fr-8K6" id="W4n-Tg-qph"/>
+                        <outlet property="button3" destination="IRF-ia-Fp1" id="tru-BM-BhM"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="355"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="estonia" width="200" height="100"/>
+    </resources>
+</document>
